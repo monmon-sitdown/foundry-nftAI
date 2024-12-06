@@ -8,8 +8,7 @@ contract DeployMyNFT is Script {
     function run() external {
         vm.startBroadcast(); //deployerPrivateKey);
 
-        // 部署合约
-        MyNFT myNFT = new MyNFT(); // 或者提供实际的初始所有者地址
+        MyNFT myNFT = new MyNFT(); //
         console.log("MyNFT deployed to:", address(myNFT));
 
         vm.stopBroadcast();
